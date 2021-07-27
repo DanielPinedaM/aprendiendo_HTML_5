@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Etiqueta output</title>
+    </head>
+    <body>
+        <h1>
+            Resultado de Eventos o Hacer Cálculos con <code>input</code>: Etiqueta
+            <code>output</code>
+        </h1>
+
+        <p>
+            <code>output</code> es como si fuera un script que puede hacer cálculos
+            matemáticos o mostrar el resultado de otros eventos del usuario:
+        </p>
+
+        <hr />
+
+        <p>Puedo usar JS:</p>
+
+        <form>
+            <label for="usuario">Nombre usuario</label>
+            <input type="text" id="usuario" onkeyup="imprimir_nombre_usuario()" />
+
+            <output id="disponibilidadusuario" for="usuario"></output>
+        </form>
+
+        <hr />
+
+        <p>O hacerlo directamente en el HTML:</p>
+
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="b" name="b" value="50"> +
+            <input type="number" id="a" name="a" value="10"> =
+            <output name="result" for="a b">60</output>
+        </form>
+
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Tabla (Table)</title>
+
+        <style>
+            td {
+                background-color: steelblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Atributos rowspan y colspan</h1>
+
+        <p>
+            <strong>Hacer que una casilla □ ocupe más de una...</strong>
+        </p>
+
+        <p>
+            <b>Fila ↔: rowspan=”#”</b> <br />
+            Sirve para que una casilla □ ocupe más de una fila ↔. Por defecto solo ocupa
+            una sola fila.
+        </p>
+
+        <p>
+            <b>Columna ↨: colspan=”#”</b> <br />
+            Sirve para que una casilla □ ocupe más de una columna ↨. Por defecto solo
+            ocupa una sola columna.
+        </p>
+
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">rowspan ↔</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">colspan ↨</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

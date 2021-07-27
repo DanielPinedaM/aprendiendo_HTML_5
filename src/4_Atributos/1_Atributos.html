@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Atributos</title>
+
+        <!-- Codigo CSS -->
+        <style>
+            #identificador_unico {
+                box-shadow: 2px 2px 1px black;
+            }
+            .clase {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <!-- 
+class: Sirve para dar estilos CSS y configurar el comportamiento de las etiquetas con JS, se puede aplicar a michas etiquetas
+
+id: Identificador único que sirve para dar nombre a una etiqueta y después llamarla desde CSS y JS. Solo se puede aplicar a una sola etiqueta
+ -->
+    <div id="identificador_unico">
+        <h1>Cerry de chocolate</h1>
+        <p class="clase">Esta es mi receta para hacer curry con chocolate</p>
+        <p class="clase">Mmm mm mmmmm</p>
+    </div>
+
+    <!-- Codigo JS -->
+    <script>
+        const p = document.getElementById("identificador_unico");
+        console.log(p.textContent);
+    </script>
+
+    <!-- title: Sirve para q cuando el usuario pase la cursor por la etiqueta, se vea un mensaje -->
+    <button title="Click aqui para guardar">Guardar</button>
+
+    <!-- data-*: Asignar un valor a una etiqueta. El asterisco (“ * ”) es el valor que le doy a la etiqueta -->
+
+    <p id="ID_parrafo" data-ejemplo="Valor de la etiqueta">Texto en pantalla</p>
+
+    <!-- Codigo JS -->
+    <script>
+        const ID_parrafo = document.getElementById("ID_parrafo");
+        console.log(ID_parrafo.dataset.ejemplo);
+    </script>
+
+    <!-- draggable: -->
+    <p draggable="true">Este elemento se puede arrastrar</p>
+
+    <!-- contenteditable: Indica que un contenido se puede editar
+         spellcheck: Verifica la ortografica del contendio editable-->
+    <p contenteditable="true" spellcheck="true">
+        Este contenido es editable y verifica la ortografia
+    </p>
+
+    <p contenteditable="true">Este contenido es editable</p>
+
+    <!-- hidden: 
+        hidden es un atributo global y booleano. Sirve para ocultar o mostrar el contenido con ayuda de JS.-->
+
+    <p>El contenido de aqui abajo esta oculto</p>
+
+    <p hidden>Este contenido no se muestra en pantalla</p>
+
+    <!-- También se puede usar con los <input> para ocultarlos y enviar información al servidor que el usuario no pueda modificar ni ver: -->
+
+    <form>
+        <input
+            type="hidden"
+            id="ID"
+            name="nombre campo"
+            value="valor que no puede modificar ni ver el usuario"
+        >
+
+        <input type="text" value="hola mundo" hidden>
+    </form>
+
+</html>

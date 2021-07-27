@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contenido Embebido</title>
+
+    </head>
+    <body>
+        <h1>
+            Lista de Formatos con Contenido Embebido para la Compatibilidad del
+            Navegador: <code>source</code>
+        </h1>
+
+        <p>
+            <code>source</code> Es una lista del mismo recurso multimedia en diferentes
+            formatos para que en caso de que el navegador no sea compatible con un
+            formato entonces pueda mostrar otro formato.
+        </p>
+
+        <h2><b>Recordatorio:</b></h2>
+        <p
+            >- El navegador lee el código de arriba hacia abajo línea por
+            línea (como si fuera un condicional en un lenguaje de programación), entonces
+            el primer formato que encuentre o condición que se cumpla y sea verdadera el
+            navegador se saldrá de la etiqueta multimedia (<code>picture</code>;
+            <code>audio</code>; <code>video</code>; etc.) y esa será la imagen que le
+            mostrará al usuario.
+        </p>
+        <hr />
+
+        <video width="300" height="300" controls>
+            <source src="/assets/video/despacito.mp4" type="video/mp4">
+            <source src="/assets/video/despacito.mkv" type="video/mkv">
+            <source src="/assets/video/despacito.avi" type="video/avi">
+        </video>
+
+        <audio controls>
+            <source src="/assets/audio/despacito.mp3" type="audio/mp3">
+            <source src="/assets/audio/despacito.wav" type="audio/wav">
+            <source src="/assets/audio/despacito.opus" type="audio/opus">
+        </audio>
+
+    </body>
+</html>

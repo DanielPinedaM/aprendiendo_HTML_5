@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+
+        <link rel="stylesheet" type="text/css" href="12.2_estilos.css" />
+    </head>
+
+    <body>
+        <h1>Enviar form: GET (Leer) V.S POST (Guardar)</h1>
+
+        <a href="https://www.youtube.com/watch?v=DVU0ZWnmx1U" target="_blank"
+            >Tutorial</a
+        >
+
+        <hr />
+
+        <table>
+            <tr>
+                <td><b>CRUD</b></td>
+                <td><b>Metodo HTTP</b></td>
+                <td><b>Descripción</b></td>
+            </tr>
+
+            <tr>
+                <td>Guardar</td>
+                <td>POST</td>
+                <td>Envia nuevos recursos al servidor</td>
+            </tr>
+
+            <tr>
+                <td>Leer</td>
+                <td>GET</td>
+                <td>Recupera (trae) informacion del servidor</td>
+            </tr>
+
+            <tr>
+                <td>Actualizar</td>
+                <td>PUT</td>
+                <td>
+                    Remplaza informacion existente de un recurso por nueva informacion
+                </td>
+            </tr>
+
+            <tr>
+                <td>Eliminar</td>
+                <td>DELETE</td>
+                <td>Elimina el recurso del servidor</td>
+            </tr>
+        </table>
+
+        <hr />
+
+        <!-- Sintaxis: 
+            <form action="/ruta" method="get, post ó dialog"> -->
+
+        <h2>GET (Leer):</h2>
+        <p>Es el metodo que por defecto tienen todas las paginas web</p>
+        <form action="get.html" method="get">
+            <label for="text_1">Metodo GET</label>
+            <input type="text" name="nombre" id="text_1" />
+            <button type="submit">get</button>
+        </form>
+
+        <hr />
+
+        <h2>POST (Guardar):</h2>
+        <p>
+            error HTTP 405. No se puede tener acceso (autenticacion) a la URL o la URL no
+            existe
+        </p>
+
+        <form action="post.html" method="post">
+            <label for="text_2">Metodo POST</label>
+            <input type="text" name="nombre" id="text_2" />
+            <button type="submit">post</button>
+        </form>
+
+        <!-- 
+Formato de Datos del Formulario: enctype="" y formenctype=""
+
+Documentación Oficial de enctype="" y formenctype="":
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#attr-enctype
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-formenctype
+
+enctype="" y formenctype="" es el formato (tipo) de datos que están en el <form> enviados al servidor.
+
+- enctype="" es un atributo de <form> y formenctype="" es un atributo de <button>; <input type="submit"> y <input type="image">
+
+- enctype="" solamente se usa con los métodos method="post" y PUT. 
+
+Recordatorio: 
+Los únicos métodos disponibles en HTML 5 para enviar el <form> son GET y POST.
+
+- Si escribo formenctype="" entonces su valor reemplazara al de enctype=""
+
+-  El valor de enctype="" es anulado por el de  formenctype=""
+
+
+Valor de enctype="" y formenctype="":	
+" application/x-www-form-urlencoded": Valor por defecto. Envía texto
+" multipart/form-data": Envía archivos y <input>
+" text/plain": Texto plano sin formato
+         -->
+    </body>
+</html>

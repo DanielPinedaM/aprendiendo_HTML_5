@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            #URL {
+                width: 250px;
+            }
+            #numero {
+                width: 160px;
+            }
+        </style>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formulario de prueba de HTML 5</h1>
+        <form action="get.html" method="get">
+            <fieldset>
+                <legend>Datos</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required autofocus />
+
+                <br />
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" name="correo" id="correo" required />
+
+                <br />
+
+                <label for="URL">URL:</label>
+                <input
+                    type="url"
+                    name="URL"
+                    id="URL"
+                    placeholder="Escribe la URL de tu página web personal"
+                />
+
+                <br />
+
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" />
+
+                <br />
+
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora" />
+
+                <br />
+
+                <label for="fecha_hora">Fecha y hora: </label>
+                <input type="datetime-local" name="fecha_hora" id="fecha_hora" />
+
+                <br />
+
+                <label for="mes_año">Mes y Año</label>
+                <input type="month" name="mes_año" id="mes_año" />
+
+                <br />
+
+                <label for="semana">Semana</label>
+                <input type="week" name="semana" id="semana" />
+
+                <br />
+
+                <label for="numero">Número: </label>
+                <input
+                    type="number"
+                    name="numero"
+                    id="numero"
+                    min="-10"
+                    max="10"
+                    placeholder="minimo -10 y maximo 10"
+                />
+
+                <br />
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" />
+
+                <br />
+
+                <label for="buscar">Termino de Búsqueda</label>
+                <input type="search" name="buscar" id="buscar" />
+
+                <br />
+
+                <label for="color">Color:</label>
+                <input type="color" name="color" id="color" />
+
+                <br />
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

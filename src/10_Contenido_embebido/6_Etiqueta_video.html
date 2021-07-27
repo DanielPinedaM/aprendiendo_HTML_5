@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contenido Embebido</title>
+
+        <!--         <style>
+            video {
+                max-width: 30%;
+            }
+        </style> -->
+    </head>
+    <body>
+        <h1>Etiqueta video</h1>
+
+        <a href="https://www.youtube.com/watch?v=Arlyf01AJAI" target="_blank"
+            >Tutorial</a
+        >
+
+        <p>
+            <b>Atributos:</b> <br />
+            <b>* <code>src="/ruta ó link"</code>: </b>Es donde se encuentra el audio.
+            <br />
+            * Ancho ↔ <b><code>width="#"</code></b> y alto ↨
+            <b><code>height="#"</code></b> del video en px.
+            <b>* <code>controls</code>: </b>Atributo booleano. Hace que se muestre una
+            barra de reproducción de video.<br />
+            <b>* <code>loop</code>: </b>Atributo booleano. Volver a reproducir
+            automáticamente el video desde el principio después de que se termine. <br />
+            <b>* <code>poster="/ruta ó link"</code>: </b>Imagen miniatura que se muestra
+            antes de reproducir el video. Si se usa el atributo autoplay no se muestra la
+            imagen porque el video se empieza a reproducir automáticamente.<br />
+            <b>NO</b> se debe usar <code>autoplay</code> y <code>poster=""</code> al
+            mismo tiempo
+        </p>
+
+        <hr />
+
+        <p>
+            Puedo insertar video de varias formas: <br />
+            * La forma más sencilla es solamente poniendo la etiqueta video:
+        </p>
+
+        <video
+            src="/assets/video/despacito.mp4"
+            width="500"
+            height="500"
+            controls
+            muted
+            loop
+            poster="/assets/images/imagen_miniatura_despacito.jpg"
+        ></video>
+
+        <hr />
+
+        <p>
+            También puedo usar una lista con diferentes formatos de video para que en
+            caso de que el navegador no sea compatible con un formato pueda reproducir
+            otro formato:
+        </p>
+
+        <video controls>
+            <source src="/assets/video/despacito.mp4" type="video/mp4">
+            <source src="/assets/video/despacito.mkv" type="video/mkv">
+            <source src="/assets/video/despacito.avi" type="video/avi">
+        </video>
+    </body>
+</html>

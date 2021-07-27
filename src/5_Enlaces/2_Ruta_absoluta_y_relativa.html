@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Ruta absoluta y relativa - Parte 1</title>
+    </head>
+
+<!-- 
+Ruta Absoluta y Relativa:
+Una ruta es absoluta cuando se escribe con todas las carpetas y archivos:
+
+C:/Usuario/Daniel/archivo.extension
+
+Y es relativa cuando solamente se copia una parte de la ruta:
+
+../archivo.extension
+
+- Cuando el archivo se encuentra en la misma carpeta (nivel) se pondrá solamente nombre_archivo.extension
+
+- Los dos puntos “ .. “ son los niveles (carpetas) por encima sobre los que se encuentra el archivo.
+
+- Para salir de la carpeta actual usar “ ../ ”  y se pone uno por cada carpeta (nivel) de la que quiera salir (hacia atrás).
+
+- Un slash “ / “ significa la raíz la carpeta raíz.
+-->
+    <body>
+        <h1>Ruta absoluta y relativa</h1>
+        <ul>
+            <li><a href="https://www.google.com/">Ir a google.com</a></li>
+            <li>
+                <a href="index.html"
+                    >Ir a 5_enlaces/index.html (Forma 1 - Estoy sobre el mismo nivel)</a
+                >
+            </li>
+            <li>
+                <a href="/src/5_Enlaces/index.html">Ir a 5_enlaces/index.html (Forma 2 - con la ruta absoluta)</a>
+            </li>
+            <li>
+                <a href="/index.html"
+                    >Ir a la raiz de la carpeta del proyecto (Forma 1 - /nombre_archivo.extension)</a
+                >
+            </li>
+            <li>
+                <!-- Esto de aca abajo funciona por q por defecto se busca el index -->
+                <a href="/">Ir a la raiz de la carpeta del proyecto (Forma 2 - Usando solamente el slash " / " )</a>
+            </li>
+            <li>
+                <a href="../../index.html"
+                    >Ir a la raiz de la carpeta del proyecto (Forma 3 - Devolviendome
+                    entre las carpetas del proyecto ../)</a
+                >
+            </li>
+        </ul>
+    </body>
+</html>

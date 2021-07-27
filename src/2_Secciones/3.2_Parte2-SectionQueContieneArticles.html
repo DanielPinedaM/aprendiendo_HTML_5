@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>SectionQueContieneArticles</title>
+    </head>
+
+    <!-- 
+
+Validador y Linter de HTML 5:
+Sirve para saber si mi código esta bien o mal escrito:
+
+- Página Oficial:
+https://validator.w3.org/#validate_by_input
+
+- Extensiones de VSC: 
+
+W3C Web Validator:
+https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator
+
+HTMLHint:
+https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint
+
+
+
+Diferencia entre section, article y aside:
+
+section:
+Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section.
+
+article:
+Contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por sí mismo.
+
+aside:
+Se usa para representar contenido que está relacionado pero no forma parte del contenido principal.
+
+Anidamiento:
+Una section puede contener articles, por ejemplo, si tenemos varios artículos que hablan sobre etiquetas HTML, deben ir dentro en un section, ya que es contenido relacionado entre sí, y los article serian contenido independiente porque podríamos leer uno sin haber leído el resto, y seguiría teniendo sentido.
+
+El article es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+
+También existe el caso en el que un article contenga varias secciones, el articulo independiente podría ser navegadores y este contener dentro secciones como más navegadores usados en el año 2022.
+
+-->
+    <body>
+        <!-- section que contiene articles -->
+        <header>
+            <h1>PAGINA WEB DE NOTICIAS NACIONALES</h1>
+        </header>
+        <main>
+            <section>
+                <h2>section como contenedor</h2>
+                <section>
+                    <h3>Noticias del dia</h3>
+                    <article>
+                        <header>
+                            <h4>Dia 1</h4>
+                        </header>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nisi, dolorem?
+                        </p>
+                        <footer>La noticia 1 ocurrio en Medallo</footer>
+                    </article>
+                    <article>
+                        <header>
+                            <h4>Dia 2</h4>
+                        </header>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Minus, commodi.
+                        </p>
+                        <footer>La noticia 2 ocurrio en Bogota</footer>
+                    </article>
+                    <article>
+                        <header>
+                            <h4>Dia 3</h4>
+                        </header>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Corrupti, enim.
+                        </p>
+                        <footer>La noticia 3 ocurrio en Cartagena</footer>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <time datetime="2018-07-07">Fecha Publicacion: Julio 7</time>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="12.2_estilos.css" />
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+        <h1>
+            Otros Controles para form: fieldset, legend, input type=file, meter, progres,
+            textarea
+        </h1>
+
+        <a href="https://www.youtube.com/watch?v=nFVQEiahbvc" target="_blank"
+            >Tutorial</a
+        >
+
+        <hr />
+
+        <!-- 
+            Cuadro Agrupador de Controles: <fieldset> y <legend>
+            Puedo meter dentro de un cuadro cualquier control <input> (etiquetas). <fieldset> es el cuadro y <legend> es el titulo del cuadro.
+         -->
+
+        <form>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre completo" id="name" />
+
+                <br />
+
+                <label for="surname">Apellido</label>
+                <input type="text" name="nombre completo" id="surname" />
+            </fieldset>
+        </form>
+
+        <hr />
+
+        <!-- 
+            Importar Archivos: <input type="file">
+            Permite que el suuario pueda subir a la pagina web uno o mas archivos dentro del almacenamiento de su dispositivo. Los archivos pueden cargarse en un servidor mediante el envio de formularios, JS ó la API de archivos.
+
+            - Con el atributo accept="" puedo escoger las extensiones de los archivos que se pueden subir. Ejemplo: <input type="file" accept=".txt,.docx">
+            - Con el atributo capture="" accedo a la camara y el microfono del dispositivo del usuario.
+            - Con files (FileList) puedo acceder a los archivos usando JS.
+            - Con el atributo booleano multiple el usuario puede subir mas de un archivo. Ejemplo: <input type="file" multiple>
+            * 
+         -->
+        <form>
+            <label for="file">Importar archivo: </label>
+            <input type="file" name="importar" id="file" multiple />
+        </form>
+
+        <hr />
+
+        <!-- 
+            Barra de Rango Numérico Inmodificable: <meter>
+            - El usuario no puede modificar el valor de la barra.
+
+            Atributos:
+            - value="#": Es el valor (número) por defecto de la barra.
+            - id = "": Identificador unico.
+            - min="#" y max="#": Valor minimo y maximo que puede tomar la barra.
+            - low="#" high="#" optimum="#": Valores bajo (rojo), alto (amarillo) y  optimo (verde) de la barra. La barra cambia de color de acuerdo al valor.
+         -->
+        <form>
+            <label for="meter">Barra de Rango: </label>
+            <meter
+                value="25"
+                id="meter"
+                min="0"
+                max="30"
+                low="5"
+                high="15"
+                optimum="20"
+            ></meter>
+        </form>
+
+        <hr />
+
+        <!-- 
+            Barra de Progreso (Progress Bar): <progress>
+            Se usa para mostrar al usuario de que un evento esta cargando, como por ejemplo para mostrar el progreso cuando se descarga un archivo.
+         -->
+
+        <form>
+            <label for="progress">Cargando...</label>
+            <progress id="progress" value="60" max="100">60%</progress>
+        </form>
+
+        <hr />
+
+        <!-- 
+             Cuadro de Texto en Múltiples Líneas: <textarea>
+             Es un cuadro de texto sin formato de varias líneas para que el usuario pueda escribir un texto largo.
+
+             Atributos:
+             - id="": Identificador único.
+
+             - name="": Nombre del campo cuando se envía el <form>
+
+             - rows="" y cols="": Numero de filas ↔ y columnas ↨.
+          -->
+
+        <form>
+            <label for="textarea">Digite un texto largo</label>
+            <textarea id="textarea" name="texto" rows="10" cols="10"> </textarea>
+        </form>
+
+        <hr />
+
+<!-- 
+        Cuadro de Texto o Viñeta Desplegable (Leer más) (Widget de Divulgación o Expansor): <details> y <summary>
+            
+        Un widget de divulgación es un elemento que el usuario no puede modificar que al darle click muestra más detalles. Originalmente es una viñeta pero puedo aplicar estilos CSS para convertirlo en un cuadro.
+        
+        <details> Son los detalles  o “leer más” de la información
+            
+        <summary> Es el titulo o información principal.
+                
+        - No es un <input>, es otra etiqueta.
+-->
+
+        <details>
+            <summary>Leer mas</summary>
+            HTML, CSS y JS son los lenguajes basicos de la web
+        </details>
+
+        <!-- Puedo escribir el atributo booleano open para que este abierto por defecto: -->
+
+        <details open>
+            <summary>Leer mas</summary>
+            Este elemento esta abierto por defecto
+        </details>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <!-- 
+            name = tipo de metadato
+            content = contenido (valor) del metadato
+         -->
+
+        <!-- Formato de codificación de HTML 5: -->
+        <meta charset="UTF-8" />
+
+        <!-- Es la “vista de compatibilidad” que permite al navegado “entender” páginas web que no cumplen con los estándares y agrega compatibilidad con navegadores antiguos como Internet Explorer y Chrome 1: -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+        <!-- Es el tamaño de la ventana grafica “viewport content”, es decir, las medidas de la pantalla para poder mostrar la página web (responsive design): -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Descripción, autor y palabras clave de la página web. Cuando usa un buscador web, esta información es la que se muestra: -->
+        <meta name="description" content="esta es mi primera pagina web">
+        <meta name="autor" content="Daniel Pineda">
+        <meta name="keywords" content="primer sitio, primera pagina">
+
+        <title>Etiquetas meta y accesibilidad</title>
+
+        <style>
+            img {
+                max-width: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Etiquetas meta</h1>
+
+        <a href="https://www.youtube.com/watch?v=HG3watbW3a0" target="_blank"
+            >Tutorial</a
+        >
+
+        <p>
+            Los metadatos son datos que describen otros datos. Son un grupo de datos que
+            describen a otro recurso u objeto. En el caso de las paginas web
+            <code>meta</code> describe de forma general su contenido: Autor, titulo,
+            descripción de la página, etc. Estos datos se encuentran dentro del
+            <code>head</code> y no son visibles para el usuario.
+        </p>
+
+        <img src="/assets/images/metadatos.jpg" alt="error al mostrar la imagen" />
+
+        <hr />
+    </body>
+</html>

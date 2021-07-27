@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Etiquetas map y area</title>
+    </head>
+    <body>
+        <h1>
+            Imagen con Enlaces (Mapa de Imagen): Etiquetas <code>map</code> y
+            <code>area</code>
+        </h1>
+
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map"
+            >Documentacion oficial de <code>map</code></a
+        >
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area"
+            >Documentacion oficial de area</a
+        >
+
+        <p>
+            Un mapa de imagen es una imagen a la que se le puede hacer click en varias
+            partes para redirigir a un enlace.
+        </p>
+
+        <p>
+            <code>map</code> es la etiqueta contenedora de <area /> y <img /> del mapa de
+            imágenes.
+        </p>
+
+        <p>
+            <code>area</code> son las coordenadas que redirigen a un enlace.
+        </p>
+
+        <hr />
+
+        <p>
+            <code>img</code> es la imagen.
+        </p>
+
+        <map name="infographic">
+            <area
+                shape="poly"
+                coords="130,147,200,107,254,219,130,228"
+                href="https://developer.mozilla.org/docs/Web/HTML"
+                target="_blank"
+                alt="HTML"
+            />
+            <area
+                shape="poly"
+                coords="130,147,130,228,6,219,59,107"
+                href="https://developer.mozilla.org/docs/Web/CSS"
+                target="_blank"
+                alt="CSS"
+            />
+            <area
+                shape="poly"
+                coords="130,147,200,107,130,4,59,107"
+                href="https://developer.mozilla.org/docs/Web/JavaScript"
+                target="_blank"
+                alt="JavaScript"
+            />
+        </map>
+        <img
+            usemap="#infographic"
+            src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"
+            alt="MDN infographic"
+        />
+    </body>
+</html>
