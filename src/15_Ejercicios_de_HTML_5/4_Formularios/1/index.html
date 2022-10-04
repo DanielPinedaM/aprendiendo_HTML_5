@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formulario de Registro</h1>
+        <form action="get.html" method="get">
+            <fieldset>
+                <legend>Información personal</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    minlength="1"
+                    maxlength="50"
+                    required
+                    placeholder="Nombres de nacimiento"
+                    autofocus
+                />
+
+                <br />
+
+                <label for="apellidos">Apellidos:</label>
+                <input
+                    type="text"
+                    name="apellidos"
+                    id="apellidos"
+                    minlength="1"
+                    maxlength="50"
+                    required
+                    placeholder="Apellidos de nacimiento"
+                />
+
+                <br />
+
+                <label>Genero:</label>
+
+                <input
+                    type="radio"
+                    name="radio"
+                    id="masculino"
+                    value="masculino"
+                    required
+                />
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="radio" id="femenino" value="femenino" />
+                <label for="femenino">Femenino</label>
+
+                <input type="radio" name="radio" id="no_binario" value="no_binario" />
+                <label for="no_binario">No Binario</label>
+
+                <br />
+
+                <label for="correo">Correo Electrónico:</label>
+                <input
+                    type="email"
+                    name="correo"
+                    id="correo"
+                    required
+                    placeholder="Correo electrónico"
+                />
+
+                <br />
+
+                <label for="edad">Edad:</label>
+                <input
+                    type="number"
+                    name="edad"
+                    id="edad"
+                    required
+                    min="18"
+                    placeholder="años"
+                />
+
+                <br />
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento: </label>
+                <input
+                    type="date"
+                    name="fecha nacimiento"
+                    id="fecha_nacimiento"
+                    required
+                />
+
+                <br />
+
+                <input
+                    type="checkbox"
+                    name="terminos"
+                    id="informacion"
+                    checked
+                    required
+                />
+                <label for="informacion"
+                    >Deseo recibir información sobre novedades y ofertas</label
+                >
+
+                <br />
+
+                <input type="checkbox" name="terminos" id="terminos" required />
+                <label for="terminos"
+                    >Declaro haber leido y aceptar las condiciones del programa y la
+                    normativa sobre protección de datos</label
+                >
+
+                <br />
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

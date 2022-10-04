@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Otras Etiquetas de Linea</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body>
+        <h1>Otras Etiquetas de Linea</h1>
+
+        <!-- 
+Diferencia entre <div> y <span>:
+Ambas etiquetas no tienen un significado semántico y se usan para dar estilos con CSS y dar interactividad con JS. La diferencia es que <div> es un elemento en bloque y <span> es un elemento en línea.
+ -->
+
+        <!-- 
+Divisor de Contenido en Bloque: <div>
+Elemento en bloque. Se usa como divisor del documento (contenido), semánticamente no significa nada, es un contenedor genérico que se usa generalmente para dar estilos CSS o para usar la “delegación de eventos” en JS.
+ -->
+        <div>div - Elemento en BLOQUE</div>
+
+        <!-- 
+Divisor de Contenido en Línea: <span>
+Elemento en línea. Es equivalente a <div>, se suele usar para contener palabras o pequeños textos y darles estilos CSS o interactividad con JS. Semánticamente no significa nada.
+ -->
+
+        <span>span - Elemento en LINEA </span>
+
+        <p>
+            Add the
+            <span class="ingredient">basil</span>,
+            <span class="ingredient">pine nuts</span> and
+            <span class="ingredient">garlic </span>
+            to a blender and blend into a paste.
+        </p>
+
+        <!-- Cita Larga <blockquote>, 
+            Cita Corta <q> y 
+            Autor o Fuente de la Cita <cite> -->
+
+        <h1>Hombre De Vitruvio:</h1>
+        <q cite="www.dominio.com">
+            <img src="HombreDeVitruvio.jpg" alt="error al mostrar imagen" />
+        </q>
+
+        <blockquote cite="">blockquote - Elemento en BLOQUE</blockquote>
+
+        <p>
+            Esta idea es de mi autoria pero esta otra es una
+            <q cite="www.dominio.com"> cita textual corta (menos de 40 palabras) </q>
+        </p>
+
+        <q> q - Elemento en LINEA </q>
+
+        <cite> cite - elemento en LINEA </cite>
+
+        <p>
+            <q
+                >Seguid vuestro corazón e intuición porque de alguna manera ya sabéis lo
+                que realmente queréis llegar a ser
+            </q>
+            <cite>- Steve Jobs</cite>
+        </p>
+
+        <!-- 
+            <code>: 
+            Se usa para hacer referencia a que se esta escribiendo código fuente.
+             -->
+        <p>
+            El método <code> push () </code> agrega uno o más elementos al final de una
+            matriz y devuelve la nueva longitud de la matriz.
+        </p>
+
+        <!-- 
+            Cuando se escriben varias líneas de código es recomendable meter dentro de <code> la etiqueta <pre> -->
+        <code>
+            <pre>
+                if (condition) {
+    
+                }
+            </pre>
+        </code>
+
+        <p>
+            <a href="https://ascii.cl/es/codigos-html.htm" target="_blank"
+                >Lista de Caracteres especiales (ASCII) en HTML</a
+            >
+            <br>
+            <code>&#60;h1&#62;</code>
+            se usa para representar titulos
+        </p>
+    </body>
+</html>

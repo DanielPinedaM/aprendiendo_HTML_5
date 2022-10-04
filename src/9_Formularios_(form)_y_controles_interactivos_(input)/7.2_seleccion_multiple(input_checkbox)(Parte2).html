@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+
+        <h1>Selección Múltiple: input type="checkbox"</h1>
+
+        <form>
+            <p>Seleccione uno o varios lenguajes de los que tengas conocimiento:</p>
+
+            <input type="checkbox" name="lenguaje" id="checkbox_HTML" value="HTML">
+            <label for="checkbox_HTML">HTML</label>
+
+            <br>
+
+            <input type="checkbox" name="lenguaje" id="checkbox_CSS" value="CSS">
+            <label for="checkbox_CSS">CSS</label>
+
+            <br>
+
+            <input type="checkbox" name="lenguaje" id="checkbox_JS" value="JS">
+            <label for="checkbox_JS">JS</label>
+        </form>
+
+        <hr>
+
+        <form>
+            <p>Marcar item por defecto con el atributo checked</p>
+
+            <input type="checkbox" name="valores" id="checkbox_1" value="valor_1">
+            <label for="checkbox_1">Valor 1</label>
+
+            <br>
+
+            <input type="checkbox" name="valores" id="checkbox_2" value="valor_1" checked>
+            <label for="checkbox_2">Valor 2 marcado por default</label>
+
+            <br>
+
+            <input type="checkbox" name="valores" id="checkbox_3" value="valor_1" checked>
+            <label for="checkbox_3">Valor 3 marcado por default</label>
+        </form>
+
+    </body>
+</html>

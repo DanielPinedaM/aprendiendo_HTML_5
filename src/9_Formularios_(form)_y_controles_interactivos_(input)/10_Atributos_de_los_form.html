@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+        <h1>Atributos de los form</h1>
+
+        <a href="https://www.youtube.com/watch?v=vZWsgecmp4M&t=2s" target="_blank">Tutorial</a>
+
+        <hr>
+
+        <form>
+            <input type="text" name="text_1" placeholder="Digite Nombre" required />
+            <input type="text" name="text_2" value="CampoDeSoloLectura" readonly />
+            <input type="text" name="text_3" value="CampoDesactivado" disabled />
+            <input type="number" name="text_4" min="10" max="20" />
+            <input type="text" name="text_5" minlength="3" maxlength="5" />
+
+            <br />
+
+            <button type="submit">Enviar form</button>
+        </form>
+
+        <hr />
+
+        <h2>Pista en Campo: placeholder</h2>
+        <p>
+            Dice al usuario “una pista” de lo que debe escribir en el campo. Esto no es
+            un valor value="" por defecto, es una descripción dentro del campo.
+        </p>
+        <form>
+            <input type="text" placeholder="Nombre completo" />
+            <textarea rows="3" cols="40" placeholder="texto largo"></textarea>
+        </form>
+
+        <hr />
+
+        <h2>Campo Obligatorio: required</h2>
+        <p>Obliga al usuario a digitar el campo cuando vaya a enviar el form</p>
+        <form>
+            <input type="text" required />
+
+            <br />
+
+            <label for="numeros"></label>
+            <select name="numeros" id="numeros" required>
+                <option value="">Seleccion una opcion</option>
+                <option value="uno">uno</option>
+                <option value="dos">dos</option>
+                <option value="tres">tres</option>
+            </select>
+
+            <br />
+
+            <textarea rows="3" cols="40" required></textarea>
+
+            <button type="submit">Enviar form</button>
+        </form>
+
+        <hr />
+
+        <h2>Campo de Solo Lectura: readonly</h2>
+        <p>
+            Es un atributo booleano que hace que un campo sea de solo lectura, es decir,
+            que NO se pueda editar.
+        </p>
+
+        <form>
+            <label for="text">Este text NO se puede editar</label>
+            <input type="text" id="text" value="CampoDeSoloLectura" readonly />
+        </form>
+
+        <hr />
+
+        <h2>Valor Minimo y Maximo de un Campo: min="#" y max="#"</h2>
+        <p>Establece el valor mínimo y máximo que puede tomar un campo.</p>
+        <p>
+            - Pueden escribirse ambos atributos min="#" y max="#" o solamente uno de los
+            dos.
+        </p>
+        <form>
+            <label for="number_1">Numero entre 5 y 10</label>
+            <input type="number" id="number_1" min="5" max="10" />
+
+            <br />
+
+            <label for="number_2">Numero mayor o igual a 20</label>
+            <input type="number" id="number_2" min="20" />
+
+            <br />
+
+            <label for="number_3">Numero menor o igual a 20</label>
+            <input type="number" id="number_3" max="20" />
+
+            <br />
+
+            <button type="submit">Enviar form</button>
+        </form>
+
+        <hr />
+
+        <h2>maxlenght y minlenght</h2>
+        <p>
+            Establece el número máximo y mino de caracteres que se puede digitar en un
+            campo.
+        </p>
+        <form>
+            <label for="texto"></label>
+            <input type="text" id="texto" minlength="3" maxlength="5" required />
+            <button type="submit">Enviar form</button>
+        </form>
+
+        <hr />
+
+        <h2>selected</h2>
+        <p>
+            Con el atributo booleano selected establezco la opción que por defecto esta
+            seleccionada
+        </p>
+        <form>
+            <select name="numeros">
+                <option value="">Seleccione una opción</option>
+                <option value="Uno">Uno</option>
+                <option value="Dos" selected>Dos</option>
+                <option value="Tres">Tres</option>
+            </select>
+        </form>
+
+        <hr />
+
+        <h2>Desactivar Campo: disabled</h2>
+        <p>
+            Atributo booleano. Desactiva un campo para que el usuario no pueda
+            interactuar con este. disabled no envía los datos del campo que este
+            desactivado al servidor.
+        </p>
+        <form>
+            <button type="button" disabled>BotonDesactivado</button>
+            <input type="text" value="textDesactivado" disabled />
+            <textarea rows="2" cols="11" disabled>textareaDesactivado</textarea>
+        </form>
+
+        <hr>
+
+        <h2>Situar Cursor por Defecto en un Campo (Enfoque Automático): autofocus</h2>
+        <p>Atributo booleano. Hace que cuando se cargue la pagina el cursor se sitúe en un campo.</p>
+        <p>- Solamente puede ponerse en un solo campo por cada ruta de la página web.</p>
+        <form>
+            <input type="text" autofocus>
+        </form>
+    </body>
+</html>

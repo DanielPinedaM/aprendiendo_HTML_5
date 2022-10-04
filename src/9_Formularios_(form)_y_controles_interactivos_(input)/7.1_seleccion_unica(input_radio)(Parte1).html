@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+        <h1>Selección Única: input type="radio"</h1>
+
+        <a href="https://www.youtube.com/watch?v=PGTtW_3ON-g" target="_blank">Tutorial</a>
+
+        <!-- 
+Selección Única: <input type="radio">
+Permite seleccionar una única opción de una lista de opciones relacionadas.
+
+- Debe tener el atributo name="". Ya que cuando no se escribe se permite la selección múltiple.
+
+- Debe tener el atributo value="" para que al enviar el <form> el servidor pueda saber su valor.
+         -->
+        <form>
+            <p>Seleccione su genero:</p>
+
+            <input type="radio" name="genero" id="radio_m" value="masculino" />
+            <label for="radio_m">Masculino</label>
+
+            <br />
+
+            <input type="radio" name="genero" id="radio_f" value="femenino" />
+            <label for="radio_f">Femenino</label>
+
+            <br />
+
+            <input type="radio" name="genero" id="radio_nb" value="no binario" />
+            <label for="radio_nb">No binario</label>
+        </form>
+
+        <hr />
+
+        <form>
+            <p>Marcar item por defecto con el atributo checked</p>
+            <input type="radio" name="default" id="radio_1" value="otro item" />
+            <label for="radio_1">Otro item</label>
+
+            <br />
+
+            <!-- 
+                - Con el atributo checked puedo hacer que un ítem este marcado por defecto. Aunque se refresque la página web, el ítem seguirá marcado:
+             -->
+            <input
+                type="radio"
+                name="default"
+                id="radio_2"
+                checked
+                value="item default"
+            />
+            <label for="radio_2">Item marcado por defecto</label>
+        </form>
+    </body>
+</html>

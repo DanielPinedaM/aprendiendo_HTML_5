@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Atributos de los enlaces</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Atributos de los enlaces</h1>
+
+        <h2>target</h2>
+
+        <hr />
+
+        <p>
+            <a href="https://www.google.com/">Abrir Google en la MISMA pestaña</a>
+        </p>
+
+        <hr />
+
+        <p>
+            <a href="https://www.google.com/" target="_blank"
+                >Abrir Google en una NUEVA pestaña
+            </a>
+        </p>
+
+        <hr />
+
+        <h2>download - link de descarga directo</h2>
+
+        <a href="../../assets/images/batman_guason.jpg" download>Recurso local</a>
+
+        <hr />
+
+        <a
+            href="https://drive.google.com/uc?id=1x7mP1ftJVT2wB4pPbzmWDOMyQ36sbZcp&export=download"
+            >Recurso en Google Drive</a
+        >
+
+        <hr />
+
+        <a class="button" target="_blank" href="https://www.google.com/">Abrir google</a>
+
+        <hr>
+
+        <p>Meter dentro de &#60;a&#62; un &#60;button&#62; <b>NO</b> es correcto (pero funciona):</p>
+        <a href="https://www.google.com/"> 
+            <button>&#60;button&#62; dentro &#60;a&#62;</button> 
+        </a>
+
+    </body>
+</html>

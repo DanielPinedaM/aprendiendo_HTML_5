@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Etiquetas meta y accesibilidad</title>
+    </head>
+    <body>
+        <h1>Atributos de Accesibilidad</h1>
+
+        <a href="https://www.youtube.com/watch?v=-4y3vb0IHgw" target="_blank"
+            >Tutorial</a
+        >
+
+        <p>
+            Son características de HTML que permiten accesibilidad a la pagina web a
+            personas con discapacidades.
+        </p>
+
+        <hr />
+
+        <h2>Lector de Pantalla para Pagina Web:</h2>
+        <h3>Screen Reader (ChromeVox Classic Extension):</h3>
+        <p>
+            Esta extensión lee en donde esta “parado” el usuario cuando se desplaza por
+            cualquier parte de la página web.
+        </p>
+        <a
+            href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=es"
+            target="_blank"
+            >Chrome Web Store</a
+        >
+
+        <hr />
+
+        <h2>
+            Seleccionar Partes de la Pagina Web con la Tecla Tabulador:
+            <code>tabindex="#"</code>
+        </h2>
+
+        <p>
+            Es un atributo global. Hace que cuando el usuario presiona tabulador puede
+            seleccionar cualquier etiqueta (parte) de la página web.
+        </p>
+
+        <p tabindex="1">Parrafo 1</p>
+        <p tabindex="2">Parrafo 2</p>
+        <p tabindex="3">Parrafo 3</p>
+
+        <hr />
+
+        <h2>Definir que Dice el Lector de Pantalla: <code>aria-label=""</code></h2>
+        <a
+            href="https://www.google.com/"
+            target="_blank"
+            aria-label="leer mas sobre el buscador de Google"
+            >Leer más</a
+        >
+
+        <hr />
+
+        <h2>
+            Decir al Navegador en qué Tipo de Control está Situado el Usuario:
+            <code>role=""</code>
+        </h2>
+
+        <div role="article">
+            <article>
+                <h2>otro subtitulo</h2>
+                <p>Otro parrafo</p>
+            </article>
+        </div>
+
+
+    </body>
+</html>

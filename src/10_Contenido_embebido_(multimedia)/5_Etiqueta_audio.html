@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contenido Embebido</title>
+    </head>
+    <body>
+        <h1>Etiqueta audio</h1>
+
+        <a href="https://www.youtube.com/watch?v=kbwhI5nHb-M" target="_blank"
+            >Tutorial</a
+        >
+
+        <p>
+            Inserta sonido en la pagina web <br />
+            <b>Atributos:</b> <br />
+            <b>* controls: </b> Atributo booleano. Hace que se muestre una barra de
+            reproduccion de audio. <br />
+            <b>* autoplay:</b> Atributo booleano. Reproduce automaticamente el audio al
+            cargar la pagina web. Es probable que no funcione. <br />
+            <b>* muted: </b> Atributo booleano. Silencia el audio. El audio puede estar
+            silenciado y reproduciendose automaticamente al mismo tiempo.<br />
+            <b>* loop: </b>Atributo booleano. Volver a reproducir automaticamente el
+            audio desde el principio despues de que se termine
+        </p>
+
+        <hr />
+
+        <p>Puedo insertar audio de varias formas:</p>
+
+        <p>* La forma más sencilla es solamente poniendo la etiqueta audio:</p>
+
+        <audio src="/assets/audio/despacito.mp3" controls autoplay muted loop></audio>
+
+        <hr />
+
+        <p>* Puedo ponerle un titulo al audio:</p>
+
+        <figure>
+            <figcaption>Cancion Despacito:</figcaption>
+
+            <audio controls src="/assets/audio/despacito.mp3"></audio>
+        </figure>
+
+        <hr />
+        <!-- * También puedo usar una lista con diferentes formatos de audio para que en caso de que el navegador no sea compatible con un formato pueda reproducir otro formato: -->
+
+        <p>
+            * También puedo usar una lista con diferentes formatos de audio para que en
+            caso de que el navegador no sea compatible con un formato pueda reproducir
+            otro formato
+        </p>
+        <audio controls>
+            <source src="/assets/audio/despacito.mp3" type="audio/mp3" />
+            <source src="/assets/audio/despacito.opus" type="audio/opus" />
+            <source src="/assets/audio/despacito.wav" type="audio/wav" />
+        </audio>
+    </body>
+</html>

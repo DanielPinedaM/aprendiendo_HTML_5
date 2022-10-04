@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contenido Embebido</title>
+
+        <style>
+            /* Ajustar el tamaño de la imagen para que no se desborde:  */
+            img{
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Atributo srcset (Imagenes Responsive)</h1>
+
+        <a href="https://www.youtube.com/watch?v=qj81Y4l2Wvs" target="_blank"
+            >Tutorial</a
+        >
+        <br />
+        <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
+            target="_blank"
+            >Documentacion oficial</a
+        >
+
+        <hr />
+
+        <p><u>Imagen...</u><br>
+            <b>grande: </b>2000 px <br>
+            <b>mediana: </b>1000 px <br>
+            <b>pequeña: </b>300 px
+        </p>
+
+        <!-- 
+            srcset="": Son imágenes responsive. Este atributo hace que se carguen las imágenes dependiendo del dispositivo en donde se encuentre el usuario.
+            
+            Esto depende de la relación de píxeles del dispositivo (device pixel ratio, DPR) que es la relación que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para "pintar" contenido.
+            
+            DPR = Pixeles reales y pixeles disponibles
+            
+            Pixeles: Ancho ↔ X Alto ↨
+
+            ¿Cuál es el tamaño de mi ventana gráfica?: https://whatismyviewport.com/
+
+            Articulo:
+            https://www.fotografiaecommerce.com/blog/imagenes-responsive-srcset/
+
+            Hay dos formas de cargar las imágenes dependiendo de su tamaño:
+         -->
+
+        <h2>Forma 1: Usando el DPR</h2>
+        <img
+            srcset="/assets/images/imagen_pequeña.jpg 1x,
+                    /assets/images/imagen_mediana.jpg 2x,
+                    /assets/images/imagen_grande.jpg 3x"
+
+            src="/assets/images/imagen_grande.jpg"
+            alt="error al cargar la imagen"
+        >
+
+        <!-- 
+        * Para los navegadores que no sean compatibles con srcset cargar la imagen_grande por defecto del atributo src pero también tienes otras opciones con srcset
+         -->
+
+        <hr />
+
+        <h2>Forma 2: Dejando que el "compu" decida q imagen usar</h2>
+        <img
+            srcset=" /assets/images/imagen_pequeña.jpg 300w,
+                     /assets/images/imagen_mediana.jpg 1000w,
+                     /assets/images/imagen_grande.jpg 2000w"
+
+            src="/assets/images/imagen_grande.jpg"
+            alt="error al cargar la imagen"
+        >
+
+        <!-- * La imagen pequeña tiene 300 pixeles de ancho (se escribe w y no px porque para este caso pixeles = px = w) la mediana tiene 1000w (1000 px), y la grande tiene 2000w (2000 px) -->
+
+        <h2>Forma 3: Escogiendo que imagen usar </h2>
+        <img
+            srcset="
+                /assets/images/imagen_pequeña.jpg  300w,
+                /assets/images/imagen_mediana.jpg 1000w,
+                /assets/images/imagen_grande.jpg  2000w
+            "
+            sizes="(max-width: 400px) 300px,
+                        (max-width: 1200px) 1000px,
+                        2000px"
+            src="/assets/images/imagen_grande.jpg"
+            alt="error al cargar la imagen"
+        />
+
+        <!--
+            * max width = ancho máximo.
+
+            * (max-width: 400px) 300px: Si el ancho de la pantalla es menor o igual a 400 px entonces cargar la imagen pequeña de 300 px.
+
+            * (max-width: 1200px) 1000px: Si el ancho de la pantalla esta entre 400 px y 1200 px entonces cargar la imagen mediana de 1000 px.
+
+            * 2000px: Cuando no se cumpla ninguna de las condiciones anteriores, es decir, que el ancho de la pantalla sea mayor a 1200 px entonces cargar la imagen grande de 2000 px.
+          -->
+    </body>
+</html>

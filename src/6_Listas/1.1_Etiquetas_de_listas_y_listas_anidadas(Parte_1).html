@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Etiquetas de listas y listas anidadas (Parte 1)</title>
+    </head>
+    <body>
+        <h1>Etiquetas de listas y listas anidadas (Parte 1)</h1>
+
+        <!-- 
+Ítem: <li>
+Representa un elemento (ítem) de la lista.
+
+- Debe estar dentro de un <ol>, <ul>, <menu> ó <nav>.
+
+     -->
+
+        <h2>Tecnologias por aprender</h2>
+        <ul>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>NodeJS</li>
+            <li>Angular</li>
+        </ul>
+
+        <!-- 
+
+Cuando está dentro de un <ul>, los ítems tienen viñetas
+
+-->
+
+        <h2>Contenedor UL</h2>
+        <ul>
+            <li>Arroz</li>
+            <li>Viñeta</li>
+            <li>Leche</li>
+        </ul>
+
+        <!-- 
+    Cuando está dentro de un <ol>, se enumera
+-->
+
+        <h2>Contenedor OL</h2>
+        <ol>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+        </ol>
+
+        <!-- 
+Lista Desordenada: <ul>
+Contiene los elementos de una lista. Se usa cuando no importa el orden de los elementos. Los elementos se pueden leer en cualquier orden y se entenderá lo mismo.
+
+- Generalmente está compuesto por viñetas <li>.
+
+- Para cambiar el estilo de la viñeta usar CSS list-style-type.
+
+- Los hijos (descendientes directos) de un elemento <ul> deben estar dentro de un <li>. 
+ -->
+        <h2>Lista anidada con UL</h2>
+        <ul>
+            <li>Inicio</li>
+            <li>Sobre mí</li>
+            <li>
+                Servicios
+                <ul>
+                    <li>Fontanería</li>
+                    <li>Electricidad</li>
+                    <li>
+                        Pintura
+                        <ul>
+                            <li>Parkings</li>
+                            <li>Trabajos en altura</li>
+                            <li>
+                                Domicilios privados
+                                <ul>
+                                    <li>otro</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Testimonios</li>
+            <li>Contacto</li>
+        </ul>
+
+        <h2>Lista anidada con OL</h2>
+        <ol>
+            <li>Inicio</li>
+            <li>Sobre mi</li>
+            <li>
+                Servicios
+                <ol>
+                    <li>Fontanería</li>
+                    <li>Electricidad</li>
+                    <li>
+                        Pintura
+                        <ol>
+                            <li>Parkings</li>
+                            <li>Trabajos en altura</li>
+                            <li>
+                                Domicilios privados
+                                <ol>
+                                    <li>otro</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <!-- Listas Anidadas: 
+            Las listas se pueden anidar con <ul> y <ol>.
+            Cuantos más <ul> ó <ol> haya dentro, más anidada esta la lista.
+ -->
+        <h2>
+            Lista Enumerada (Ordenada - OL) dentro de lista con Viñetas (Desordenada -UL)
+        </h2>
+        <ul>
+            <li>Primer elemento - UL</li>
+            <li>
+                Segundo elemento - UL
+                <!-- La etiqueta de cierre </li> no está colocada aquí!-->
+                <ol>
+                    <li>Sub-elemento 1 - OL</li>
+                    <li>Sub-elemento 2 - OL</li>
+                    <li>Sub-elemento 3 - OL</li>
+                </ol>
+                <!-- Aquí está la etiqueta de cierre </li> -->
+            </li>
+            <li>Tercer elemento - UL</li>
+        </ul>
+
+        <!-- Otro ejemplo de anidamiento -->
+
+        <h2>Forma correcta</h2>
+        <ul>
+            <li></li>
+            <li>
+                <ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Forma incorrecta</h2>
+        <!--         <ul>
+            <li></li>
+            <li></li>
+            <ul>
+                <li></li>
+            </ul>
+        </ul> -->
+
+        <!-- 
+Lista de Definición (Sin Viñetas ni Enumeración): <dl>
+Este tipo de lista no va acompañado de viñetas ni números. Solo tiene una sangría (espaciado del lado izquierdo). Se usa para glosarios (definiciones). 
+-->
+
+        <!-- 
+        Hay varias formas de usar el <dl>:
+
+         - Con un solo <dt>:
+        -->
+
+        <h2>Con un solo DT</h2>
+        <p>Buenas practicas del desarrollo de software:</p>
+        <dl>
+            <dt>Patrones de diseño</dt>
+            <dd>Son tecnicas para resolver problemas comunes de software</dd>
+
+            <dt>Principios SOLID</dt>
+            <dd>Son practicas que facilitan refactorizar el codigo</dd>
+        </dl>
+
+        <!-- - Con muchos <dt>: -->
+
+        <h2>Con muchos DT</h2>
+        <p>Buenas practicas del desarrollo de software:</p>
+        <dl>
+            <dt>Practica 1</dt>
+            <dt>Patrones de diseño</dt>
+            <dd>Son tecnicas para resolver problemas comunes de software</dd>
+
+            <dt>Practica 2</dt>
+            <dt>Principios SOLID</dt>
+            <dd>Son practicas que facilitan refactorizar el codigo</dd>
+        </dl>
+
+        <!-- - Usando <div> -->
+
+        <h2>Usando DIV</h2>
+
+        <p>Otro ejemplo de DL</p>
+        <dl>
+            <div>
+                <dt>Name</dt>
+                <dd>Godzilla</dd>
+            </div>
+            <div>
+                <dt>Born</dt>
+                <dd>1952</dd>
+            </div>
+            <div>
+                <dt>Birthplace</dt>
+                <dd>Japan</dd>
+            </div>
+            <div>
+                <dt>Color</dt>
+                <dd>Green</dd>
+            </div>
+        </dl>
+    </body>
+</html>

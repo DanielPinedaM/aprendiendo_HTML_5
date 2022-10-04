@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+        <h1>input: color, number, range, reset, text</h1>
+
+        <br />
+
+        <form>
+            <label for="color">Elige un color</label>
+            <input type="color" id="color" />
+        </form>
+
+        <br />
+
+        <form>
+            <label for="number">Digite un número</label>
+            <input type="number" id="number" />
+        </form>
+
+        <br />
+
+        <!-- 
+        - El atributo step="#" determina de cuanto en cuanto se mueve la barra.
+        - Con los atributos min="#" y max="#" puedo indicar el valor mínimo y máximo de la barra.
+         -->
+        <form>
+            <label for="range">Barra de rango numérico</label>
+            <input type="range" id="range" step="10" min="0" max="20" />
+        </form>
+
+        <br />
+
+        <!-- 
+            type="reset" sirve para limpiar campos, es decir, que restablece todos los controles a sus valores predeterminados. type=reset no puede limpiar los campos de los otros <form>, solamente puede limpiar los campos del <form> en donde se encuentra dentro 
+        -->
+        <form>
+            <input type="text" value="valor por defecto" />
+            <br />
+            <!-- type="reset" SOLAMENTE limpia los campos de este <form> -->
+            <label for="reset">input type reset</label>
+            <input type="reset" value="Limpiar campos (cancelar)" />
+        </form>
+
+        <form>
+            <p>Cuadro de texto:</p>
+            <!-- Por defecto el valor de input es type="text" -->
+            <input type="text" /> <!-- Esto -->
+            <br />
+            <input /> <!-- Es lo mismo q esto -->
+        </form>
+
+    </body>
+</html>

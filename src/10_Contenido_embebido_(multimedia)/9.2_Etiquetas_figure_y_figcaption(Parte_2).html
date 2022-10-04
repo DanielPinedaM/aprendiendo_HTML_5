@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contenido Embebido</title>
+
+        <style>
+            img {
+                max-width: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Etiquetas <code>figure</code> y <code>figcaption</code></h1>
+
+        <a href="https://www.youtube.com/watch?v=iNSsx9OMmCE" target="_blank"
+            >Tutorial</a
+        >
+
+        <p>
+            <code>figure </code>Etiqueta contenedora. La puedo usar para: <br />
+            1. Ponerle titulo o descripción a una etiqueta (contenido). <br />
+            2. Relacionar una lista de etiquetas.
+        </p>
+
+        <hr />
+
+        <p>Su uso más común es con la etiqueta img</p>
+        <figure>
+            <img src="/assets/images/apple.jpeg" alt="error al mostrar la imagen" />
+            <img
+                src="/assets/images/batman_guason.jpg"
+                alt="error al mostrar la imagen"
+            />
+
+            <figcaption>Descripcion</figcaption>
+        </figure>
+
+        <hr />
+
+        <p>Pero también lo puedo usar con texto, contenido embebido, <code>label</code>, controles interactivos, botones, enlaces… y cualquier otra etiqueta a la que le pueda poner un titulo o descripción o lista de etiquetas que pueda relacionar</p>
+        <figure>
+            <figcaption>Titulo</figcaption>
+            <p>"Parrafo 1" <cite>Autor o Fuente de la Cita</cite></p>
+            <p>Parrafo 2</p>
+        </figure>
+
+        <figure>
+            <h2>Subtitulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, id?</p>
+        </figure>
+
+        <hr>
+
+        <p>
+            <code>figcaption</code> es la descripción o título del contenido.<br>
+            - <code>figcaption</code> solamente puede escribirse una vez dentro de <code>figure</code>.<br>
+            - <code>figcaption</code> puede ir arriba o abajo del contenido.<br>
+            - <code>figcaption</code> no reemplaza las etiquetas <code>h1-h6</code>.<br>
+        </p>
+    </body>
+</html>

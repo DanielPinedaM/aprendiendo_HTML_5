@@ -1,0 +1,33 @@
+table {
+    font-family: sans-serif;
+    border: 2px solid grey;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    border: 2px solid grey;
+    padding: .5rem;
+}
+
+tr:nth-child(3) td:nth-child(2) {
+    background-color: lightgreen;
+    letter-spacing: 90px;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+td:first-child,
+th,
+tfoot {
+    background-color: lightgreen;
+}

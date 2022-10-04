@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>
+      <code>dialog</code>
+      Ventana Modal o Cuadro de Dialogo
+    </h1>
+
+    <h2>
+      <a href="https://www.youtube.com/watch?v=1x0TITmM4Wc&t=425s" target="_blank">Tutorial</a> <br />
+      <br />
+      Documentación Oficial de... <br />
+
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank">
+        HTML <code>dialog</code>
+      </a>
+      <br />
+
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement" target="_blank">
+        JavaScript <code>HTMLDialogElement.</code>
+      </a> <br>
+
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop" target="_blank">
+        Pseudo-elemento CSS <code>::backdrop</code>
+      </a> <br>
+
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen" target="_blank">
+        Pseudo-clase CSS <code>:fullscreen </code>
+      </a>
+    </h2>
+
+    <hr />
+    <br />
+
+    <button type="button" onclick="ventana_modal.showModal()">
+        Abrir
+    </button>
+
+    <dialog id="ventana_modal">
+        <button type="button" onclick="ventana_modal.close()">
+            X
+        </button>
+        hola mundo
+    </dialog>
+
+  </body>
+</html>

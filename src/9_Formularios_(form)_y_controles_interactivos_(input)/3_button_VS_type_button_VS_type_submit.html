@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+        <h1>button V.S type=button VS type=submit</h1>
+
+        <form>
+            <input />
+
+            <p>NO envia el form y NO recarga la pagina</p>
+            <input type="button" value="type=button" />
+
+            <p>SI envia el form y SI recarga la pagina</p>
+            <input type="submit" value="type=submit" />
+            <button>button</button>
+
+            <p>button permite insertar imagenes</p>
+            <button type="button">
+                image button
+                <img src="batman_guason.jpg" alt="Error al mostrar imagen del boton" />
+            </button>
+        </form>
+
+        <!-- 
+Botón - Diferencia Entre <input type="button">, <input type="submit"> y <button>:
+- Todos los controles type="button", type="submit" y <button> son un botón que cuando el usuario les da click sucede un evento:
+
+- Dentro de la etiqueta <button> se puede colocar texto e imágenes con <img src="/ruta ó link">, pero con type="button" no se puede: 
+
+- type=”button” no envía el <form> y no recarga la página web, pero <button> sí. Para enviar el <form> con <input> hay que usar <input type="submit">. Al recargar la página se limpian todos los campos:
+
+- type=”button” no permite pseudoelementos CSS, pero <button> sí.
+ -->
+    </body>
+</html>

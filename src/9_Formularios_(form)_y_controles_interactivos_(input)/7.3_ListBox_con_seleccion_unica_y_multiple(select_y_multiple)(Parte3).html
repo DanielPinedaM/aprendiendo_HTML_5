@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+        <h1>
+            ListBox con Selección Unica y Multiple:
+            <br />
+            &#60;select&#62; ; &#60;select multiple&#62; y &#60;option&#62;
+        </h1>
+
+        <form>
+            <p>Seleccione su genero:</p>
+
+            <select name="genero">
+                <!-- Con el atributo booleano selected establezco la opción que por defecto esta seleccionada. -->
+                <option value="" selected>Seleccione una opción</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="No binario">No binario</option>
+            </select>
+        </form>
+
+        <br />
+
+        <form>
+            <p>Seleccione uno o varios lenguajes de los que tengas conocimiento:</p>
+            <p>Mantenga precionado control (ctrl) para seleccionar multiples opciones</p>
+
+            <select name="lenguaje" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+            </select>
+        </form>
+    </body>
+</html>

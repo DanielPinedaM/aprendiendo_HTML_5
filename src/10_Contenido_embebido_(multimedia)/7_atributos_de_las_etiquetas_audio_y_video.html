@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contenido Embebido</title>
+
+        <style>
+            video {
+                max-width: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Atributos de las etiquetas audio y video</h1>
+
+        <hr />
+
+        <h2><b>Barra de Reproducción: </b><code>controls</code></h2>
+        <p>
+            Atributo booleano. Hace que se muestre una barra para reproducir el audio y
+            video
+        </p>
+
+        <video controls src="/assets/video/despacito.mp4"></video>
+        <audio controls src="/assets/audio/despacito.mp3"></audio>
+
+        <hr />
+
+        <h2>
+            <b>Reproducción Automatica al Cargar la Pagina Web: </b><code>autoplay</code>
+        </h2>
+        <p>
+            Reproduce automáticamente el <code>video</code> y <code>audio</code> al
+            cargar la página web. <br />
+            - Para <code>audio</code> es probable que no funcione, pero para
+            <code>video</code> sí.
+        </p>
+
+        <video controls autoplay src="/assets/video/despacito.mp4"></video>
+        <audio controls autoplay src="/assets/audio/despacito.mp3"></audio>
+
+        <hr>
+
+        <h2><b>Silenciar <code>audio</code> y <code>video</code>:</b> <code>muted</code></h2>
+
+        <video controls muted src="/assets/video/despacito.mp4"></video>
+        <audio controls muted src="/assets/audio/despacito.mp3"></audio>
+
+        <hr>
+
+        <h2><b>Volver a Reproducir Automáticamente al Terminar el <code>audio</code> o <code>video</code></b>: <code>loop</code></h2>
+
+        <video controls loop src="/assets/video/despacito.mp4"></video>
+        <audio controls loop src="/assets/audio/despacito.mp3"></audio>
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Formulario (form)</title>
+    </head>
+
+    <body>
+        <h1>Categorizar ListBox: &#60;optgroup&#62;</h1>
+
+        <form>
+            <h2>Para ListBox con Selección Unica: &#60;select&#62;</h2>
+            <select>
+                <option value="">Seleccione una opcion</option>
+
+                <optgroup label="2 patas">
+                    <option value="galinna">gallina</option>
+                    <option value="pato">pato</option>
+                </optgroup>
+
+                <optgroup label="4 patas">
+                    <option value="gato">gato</option>
+                    <option value="perro">perro</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <hr />
+
+        <form>
+            <h2>Para ListBox con Selección Múltiple: &#60;select multiple&#62;</h2>
+            <select multiple>
+                <optgroup label="3 lados">
+                    <option value="triangulo equilatero">triangulo equilatero</option>
+                    <option value="triangulo isosceles">triangulo isosceles</option>
+                </optgroup>
+
+                <optgroup label="4 lados">
+                    <option value="cuadrado">cuadrado</option>
+                    <option value="rombo">rombo</option>
+                </optgroup>
+            </select>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Otras Etiquetas de Bloque</title>
+    </head>
+    <body>
+        <h1>Otras Etiquetas de Bloque</h1>
+
+        <!-- < addres> contiene dentro información personal y de contacto. Puede contener un <a> para redirigir a un link con la información de contacto. -->
+
+        <address>
+            <p>
+                Contactame: <br />
+                <a href="mailto:jim@rock.com">jim@rock.com</a> <br />
+                <a href="tel:+13115552368">(311) 555-2368</a>
+            </p>
+        </address>
+
+        <br />
+
+        <address>
+            Tony Stark: <br />
+            Direccion: Malibu 10880 <br />
+            Codigo Postal: 90265
+        </address>
+
+        <p>la etiqueta hr es una linea horizontal ── divisora que separa contenido</p>
+
+        <p>§1: Primer contenido.</p>
+
+        <hr />
+
+        <p>§2: Segundo contenido.</p>
+
+        <!-- Cita Larga <blockquote> y Corta <cite>:
+- No necesariamente se usan para texto, también se pueden usar para citar otro contenido como por ejemplo contenido multimedia.
+
+La etiqueta <blockquote> indica una cita textual larga de más de 40 palabras.
+
+- Las citas textuales largas deben tener sangría usando CSS margin-left y/o margin-right:
+
+- El atributo cite=”” de la etiqueta <blockquote> sirve para especificar el link de donde se sacó la información: <blockquote cite="www.dominio.com">
+
+ -->
+        <blockquote cite="www.dominio.com">
+            <p>"Cita textual larga (mas de 40 palabras) con sangria"</p>
+        </blockquote>
+
+        <!-- La etiqueta <cite> indica una cita textual corta de menos de 40 palabras. -->
+        <p>
+            <cite>"Cita textual corta (menos de 40 palabras)"</cite>
+        </p>
+
+        <hr />
+
+        <!-- Mostrar Texto (Preformateado) tal cual como está Escrito en el HTML: <pre> -->
+        <pre>
+texto
+     pre   
+        formateado
+        \   ^__^
+        \  (oo)\_______
+           (__)\       )\/\
+               ||----w |
+               ||     ||
+        </pre>
+
+        <hr />
+
+        <!-- Divisor de Contenido: <div>
+Se usar como divisor del documento (contenido), semánticamente no significa nada, es un contenedor genérico que se usa generalmente para dar estilos CSS o para usar la “delegación de eventos” en JS.
+ -->
+
+        <div id="ID_1">
+            <h2 class="clase">Nombre</h2>
+            <p class="clase">Email</p>
+            <p class="clase">Descripcion</p>
+        </div>
+
+    </body>
+</html>

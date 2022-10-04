@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contenido Embebido</title>
+
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
+    </head>
+    <body>
+        <h1>Etiqueta img VS input type=image</h1>
+
+        <a href="https://www.youtube.com/watch?v=CqpKzS8uLUc" target="_blank"
+            >Tutorial</a
+        >
+
+        <hr />
+
+        <h2>Insertar Imagen: Etiqueta img</h2>
+        <p>Muestra una imagen en la pagina web</p>
+        <p>
+            - La imagen puede estar guardada localmente en mi proyecto o puede ser un link
+            de otra pagina web
+        </p>
+        
+
+        <h3>Atributos</h3>
+        <p><b>src="":</b> Es obligatorio ponerlo. Ruta o link donde esta la imagen</p>
+        <p>
+            <b>alt="":</b> Es obligatorio ponerlo. Mensaje en caso de no poder mostrar la
+            imagen
+        </p>
+
+        <img src="/assets/images/nala.png" alt="No se pudo cargar la imagen" />
+
+        <img src="/assets/images/nala.svg" alt="No se pudo cargar la imagen" />
+
+        <img src="/assets/images/nala.webp" alt="No se pudo cargar la imagen" />
+
+        <img
+            src="https://1.bp.blogspot.com/-7k-8d2iExSU/XospSUCmpxI/AAAAAAAAOfU/gxu1rx1EFyoZUwndPEz2leDKu5NhmuT_ACLcBGAsYHQ/s1600/1.png"
+            alt="No se pudo cargar la imagen"
+        />
+
+        <hr />
+
+        <h2>input type="image"</h2>
+        <p>
+            Es un boton que contiene una imagen, envia el form y recarga la pagina web.
+            Para que envie el formulario debe esta dentro de la etiqueta form
+        </p>
+        <form>
+            <input
+                type="image"
+                src="/assets/images/LoginBotton.png"
+                alt="No se pudo cargar la imagen"
+                value="boton"
+            >
+
+            <input
+            type="image"
+            src="https://1.bp.blogspot.com/-7k-8d2iExSU/XospSUCmpxI/AAAAAAAAOfU/gxu1rx1EFyoZUwndPEz2leDKu5NhmuT_ACLcBGAsYHQ/s1600/1.png"
+            alt="No se pudo cargar la imagen"
+            value="boton"
+        >
+        </form>
+    </body>
+</html>
