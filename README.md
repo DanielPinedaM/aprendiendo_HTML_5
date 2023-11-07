@@ -1,4 +1,11 @@
 # **Aprendiendo HTML 5**
+
+## Certificado de Udemy
+
+[https://www.udemy.com/certificate/UC-0bb18a23-f7de-4461-b6c3-5c81b4f656b2/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email](https://www.udemy.com/certificate/UC-0bb18a23-f7de-4461-b6c3-5c81b4f656b2/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email)
+
+![certificado.jpg](/readme_img/certificado.jpg)
+
 Codigo de prueba y ejercicios que escribi mientras aprendia HTML 5.
 
 Estos son los temas de HTML que aprendi:
@@ -224,8 +231,6 @@ Estos son los temas de HTML que aprendi:
 
 ## [10) ```<dialog>``` Ventana modal o cuadro de dialogo](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
 
-------------
-
 ## 11) Atributos de Accesibilidad (ARIA):
 * [```tabindex="#"``` Seleccionar Partes de la Pagina Web con la Tecla Tabulador](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
 * [Lector de Pantalla para Pagina Web: Screen Reader (ChromeVox Classic Extension)](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn)
@@ -249,4 +254,11 @@ Estos son los temas de HTML que aprendi:
   * [```<span>``` Divisor de Contenido en Línea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) 
 
 ------------
+
 ## [15) Ejercicios de HTML 5](http://desarrolloweb.dlsi.ua.es/libros/html-css/ejercicios)
+
+## 16) Mi primera página web en HTML 5
+
+* Curso de Fazt [https://youtu.be/rbuYtrNUxg4](https://youtu.be/rbuYtrNUxg4)
+
+* Mi código [https://github.com/DanielPinedaM/aprendiendo_HTML_5/tree/main/src/16_Mi_primera_pagina_web_en_HTML_5](https://github.com/DanielPinedaM/aprendiendo_HTML_5/tree/main/src/16_Mi_primera_pagina_web_en_HTML_5)
