@@ -6,6 +6,8 @@
 
 ![certificado.jpg](/readme_img/certificado.jpg)
 
+## [Vida MRR - Guía para ser Experto en HTML 5](https://youtu.be/Rqptqcv11w0?si=ICkBkwGeu-3FMLc5) 
+
 Codigo de prueba y ejercicios que escribi mientras aprendia HTML 5.
 
 Estos son los temas de HTML que aprendi:
